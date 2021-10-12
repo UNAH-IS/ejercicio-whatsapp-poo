@@ -1,0 +1,36 @@
+body {
+  background-color: #111D25;
+}
+
+.bg-dark {
+  background-color: #1E2A32!important;
+}
+
+.navbar-dark .navbar-brand {
+  color: #ACB5BD;
+}
+
+.user-selector {
+  background-color: #3D505D;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+.user-selector img {
+  width: 35px;
+  height: 35px;
+}
+
+.menu-option {
+  color: #ACB5BD;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.menu-option.activo {
+  color: #16AC95;
+  border-bottom: 3px solid #16AC95;
+}
