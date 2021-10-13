@@ -1,5 +1,6 @@
 body {
   background-color: #111D25;
+  color: #ACB5BD;
 }
 
 .bg-dark {
@@ -16,7 +17,7 @@ body {
   border-radius: 10px;
 }
 
-.user-selector img {
+.user-selector img, #lista-usuarios img{
   width: 35px;
   height: 35px;
 }
@@ -33,4 +34,21 @@ body {
 .menu-option.activo {
   color: #16AC95;
   border-bottom: 3px solid #16AC95;
+}
+
+#lista-usuarios {
+  background-color: #3D505D;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  border-radius: 10px;
+  display: none;
+}
+
+#lista-chats {
+  background-color: blue;
+}
+
+#lista-contactos {
+  background-color: red;
+  display: none;
 }
