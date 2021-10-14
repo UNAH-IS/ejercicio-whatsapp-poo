@@ -45,10 +45,24 @@ body {
 }
 
 #lista-chats {
-  background-color: blue;
+
 }
 
 #lista-contactos {
   background-color: red;
   display: none;
+}
+
+.img-chat img {
+  width: 65px;
+  height: 65px;
+}
+
+.chat {
+  display: flex;
+  border-bottom: 1px solid #3D505D;
+}
+
+.textos-chat {
+  flex: 1;
 }
