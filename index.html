@@ -7,6 +7,7 @@
   <title>Whatsapp</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="assets/css/main.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2a9dad6ea2.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <nav class="navbar navbar-dark bg-dark">
@@ -68,7 +69,7 @@
   </nav>
   <main>
     <div id="lista-chats">
-      <div class="chat p-1 m-2">
+      <div class="chat p-1 m-2" onclick="mostrarDetalleChat()">
         <div class="img-chat p-3">
           <img src="assets/profile-pics/vegeta.jpg" class="rounded-circle">
         </div>
@@ -83,7 +84,7 @@
         </div>
       </div>
       <!--  -->
-      <div class="chat p-1 m-2">
+      <div class="chat p-1 m-2" onclick="mostrarDetalleChat()">
         <div class="img-chat p-3">
           <img src="assets/profile-pics/androide_16.jpg" class="rounded-circle">
         </div>
@@ -98,7 +99,7 @@
         </div>
       </div>
       <!--  -->
-      <div class="chat p-1 m-2">
+      <div class="chat p-1 m-2" onclick="mostrarDetalleChat()">
         <div class="img-chat p-3">
           <img src="assets/profile-pics/cell.jpg" class="rounded-circle">
         </div>
@@ -113,8 +114,72 @@
         </div>
       </div>
     </div>
+    <!--  -->
     <div id="lista-contactos">
       Lista contactos
+    </div>
+
+    <!-- DETALLE CHAT -->
+    <div class="" id="detalle-chat">
+      <div>
+        <div class="mensaje enviado">
+          Mensaje 1
+          <div class="small text-end">9:00</div>
+        </div>
+        <div class="mensaje recibido">
+          Mensaje 2
+          <div class="small text-end">9:00</div>
+        </div>
+        <div class="mensaje enviado">
+          Mensaje 3
+          <div class="small text-end">9:00</div>
+        </div>
+      </div>
+      <div id="stickers">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-4">
+              <div class="sticker">
+                <img class="img-fluid" src="assets/stickers/1.png">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="sticker">
+                <img class="img-fluid" src="assets/stickers/2.png">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="sticker">
+                <img class="img-fluid" src="assets/stickers/3.png">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="sticker">
+                <img class="img-fluid" src="assets/stickers/4.png">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="sticker">
+                <img class="img-fluid" src="assets/stickers/5.png">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="sticker">
+                <img class="img-fluid" src="assets/stickers/6.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="formulario-mensaje">
+        <span class="icono" onclick="toggleStickers()">
+          <i class="far fa-sticky-note"></i>
+        </span>
+        <input type="text" id="mensaje-input">
+        <span class="icono">
+          <i class="fas fa-paper-plane"></i>
+        </span>
+      </div>
     </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

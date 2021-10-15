@@ -13,6 +13,7 @@ function mostrarUsuarios() {
 
 function seleccionarOpcion(id, opcionMenu) {
   console.log('Mostrar', id);
+  document.getElementById('detalle-chat').style.display = 'none';
   document.getElementById('lista-chats').style.display = 'none';
   document.getElementById('lista-contactos').style.display = 'none';
   document.getElementById(id).style.display = 'block';
@@ -21,4 +22,22 @@ function seleccionarOpcion(id, opcionMenu) {
     etiqueta.classList.remove('activo');
   });
   opcionMenu.classList.add('activo');
+}
+
+//Mostrar u ocular los stickers
+function toggleStickers() {
+  if (
+    document.getElementById('stickers').style.display == 'none' 
+    || !document.getElementById('stickers').style.display
+  ) {
+    document.getElementById('stickers').style.display = 'block';
+  } else {
+    document.getElementById('stickers').style.display = 'none';
+  }
+}
+
+function mostrarDetalleChat() {
+  document.getElementById('lista-chats').style.display = 'none';
+  document.getElementById('lista-contactos').style.display = 'none';
+  document.getElementById('detalle-chat').style.display = 'flex';
 }

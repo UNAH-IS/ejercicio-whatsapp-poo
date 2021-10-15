@@ -1,6 +1,13 @@
 body {
   background-color: #111D25;
   color: #ACB5BD;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 .bg-dark {
@@ -65,4 +72,66 @@ body {
 
 .textos-chat {
   flex: 1;
+}
+
+#detalle-chat {
+  background-image: url(../bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.mensaje {
+  background-color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 17px;
+  width: 70%;
+}
+
+.mensaje.enviado {
+  background-color: #115248;
+  margin-left: auto;
+}
+
+.mensaje.recibido {
+  background-color: #3C3C3E;
+}
+
+#formulario-mensaje {
+  background-color: #1E2A32;
+  padding: 10px;
+  display: flex;
+}
+
+#mensaje-input {
+  flex: 1;
+  padding: 3px;
+  margin: 5px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+
+.icono {
+  padding:5px;
+}
+
+.icono i {
+  font-size: 1.5rem;
+}
+
+#stickers {
+  background-color: #3D505E;
+  height: 40vh;
+  padding: 10px;
+  display: none;
+}
+
+.sticker {
+  border:  1px solid rgb(167, 167, 167);
+  margin:  5px 0;
 }
